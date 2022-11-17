@@ -1,0 +1,26 @@
+#port,sql source ,redis,mybatis,log
+server:
+  port: 12346
+spring:
+  datasource:
+    username: dazuoye
+    password: 123456
+    url: jdbc:mysql://124.220.80.204:3306/大作业?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+  redis:
+    host: 124.220.80.204
+    port: 6379
+    timeout: 1000
+    jedis:
+      pool:
+        min-idle: 5
+        max-idle: 10
+        max-wait: -1
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  type-aliases-package: com.hlwjs.entities
+  configuration:
+    map-underscore-to-camel-case: true #驼峰的转换 userName<->user_name
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
