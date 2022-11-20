@@ -21,7 +21,6 @@ public class WeatherController {
     public TencentWeather get(String province, String city, String country){
 
         return tencentWeatherService.getWeatherInfo(province, city, country);
-
     }
 
 }
