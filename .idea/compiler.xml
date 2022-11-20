@@ -12,8 +12,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="weather-api" target="8" />
-      <module name="weather-citycode" target="8" />
+      <module name="weather-api" target="1.8" />
+      <module name="weather-citycode" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
