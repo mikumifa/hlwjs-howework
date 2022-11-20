@@ -1,6 +1,6 @@
 # hlwjs-howework
 
-暂时citycode那个模块暂时没有用，腾讯api是直接名字调用
+citycode那个模块暂时没有用，腾讯api是直接名字调用
 
 ## 腾讯天气API抓取
 
@@ -105,7 +105,7 @@ public class WeatherController {
 
 gsonDecoder可以帮完成实现。
 
-> 在写entity.dto包下的类的时候安装我的那个样子写，类的名字要和json上面的一样，如果无法一样，在上面加上@SerializedName("json的key")注解
+> 在写entity.dto包下的类的时候按照我的那个样子写，类的名字要和json上面的一样，如果无法一样，在上面加上@SerializedName("json的key")注解
 
 ## 暂时配的接口
 
