@@ -31,9 +31,7 @@ public class TencentApiServiceImpl implements TencentWeatherService {
 
         JsonElement weather = tencentApiService.getWeather(province, city, country);
         String s = weather.toString();
-        System.out.println(s);
         TencentWeather tencentWeather = gson.fromJson(s, TencentWeather.class);
-        System.out.println(tencentWeather);
         return  tencentWeather;
     }
 

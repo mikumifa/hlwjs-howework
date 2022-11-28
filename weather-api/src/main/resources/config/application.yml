@@ -24,3 +24,6 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+wx:
+  appid: wx4fcd17271ae5180a
+  secret: b72d871abda270b859bcfdacf93645c8

@@ -9,15 +9,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="weather-api" />
         <module name="weather-citycode" />
+        <module name="weather-SignIn" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="weather-api" target="1.8" />
       <module name="weather-citycode" target="17" />
+      <module name="weather-SignIn" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="weather-SignIn" options="-parameters" />
       <module name="weather-api" options="-parameters" />
       <module name="weather-citycode" options="-parameters" />
     </option>

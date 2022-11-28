@@ -21,7 +21,6 @@ public class TestTencentApiController {
     String get(@PathVariable("province") String province, @PathVariable("city") String city, @PathVariable("country") String country){
         JsonElement weather = tencentApiService.getWeather(province, city, country);
         String s = weather.toString();
-        System.out.println("weather"+s);
         return s;
     }
 }

@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/weather-api/pom.xml" />
         <option value="$PROJECT_DIR$/weather-citycode/pom.xml" />
+        <option value="$PROJECT_DIR$/weather-SignIn/pom.xml" />
       </list>
     </option>
   </component>
