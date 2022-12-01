@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/weather-SignIn/weather-SignIn.iml" filepath="$PROJECT_DIR$/weather-SignIn/weather-SignIn.iml" />
       <module fileurl="file://$PROJECT_DIR$/weather-api/weather-api.iml" filepath="$PROJECT_DIR$/weather-api/weather-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/weather-app.iml" filepath="$PROJECT_DIR$/weather-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/weather-citycode/weather-citycode.iml" filepath="$PROJECT_DIR$/weather-citycode/weather-citycode.iml" />
     </modules>
   </component>
 </project>
