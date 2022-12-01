@@ -1,0 +1,12 @@
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\controller\TestTencentApiController.java
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\entity\dto\LoginInfo.java
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\config\DecoderConfig.java
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\controller\LoginController.java
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\ApiApplication.java
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\entity\dto\TencentWeather.java
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\apiService\WxLoginApiServe.java
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\apiService\TencentApiService.java
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\controller\WeatherController.java
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\service\impl\TencentApiServiceImpl.java
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\config\CustomFeignDecoder.java
+C:\Code\weather-app\weather-api\src\main\java\com\hlwjs\api\service\TencentWeatherService.java

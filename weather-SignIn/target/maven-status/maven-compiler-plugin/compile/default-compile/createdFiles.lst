@@ -1,0 +1,7 @@
+com\hlwjs\signIn\SignApplication.class
+com\hlwjs\signIn\controller\SignController.class
+com\hlwjs\signIn\config\RedisConfig.class
+com\hlwjs\signIn\mapper\SignMapper.class
+com\hlwjs\signIn\service\SignService.class
+com\hlwjs\signIn\dto\UserSignInfo.class
+com\hlwjs\signIn\service\impl\SignServiceImpl.class

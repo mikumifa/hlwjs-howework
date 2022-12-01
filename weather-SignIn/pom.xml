@@ -22,6 +22,8 @@
         <java.version>1.8</java.version>
         <nacos-config-spring-boot.version>0.2.4</nacos-config-spring-boot.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <docker.image.prefix>springboot</docker.image.prefix>
+
     </properties>
 
     <!--引入Spring Cloud依赖-->
@@ -113,10 +115,11 @@
             <artifactId>gson</artifactId>
             <version>2.10</version>
         </dependency>
+
     </dependencies>
 
     <build>
-        <finalName>hlwjs_sign</finalName>
+        <finalName>hlwjs_sign_in</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -131,7 +134,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.scangan_lijin.ScanGanLijinApplication</mainClass>
+                    <mainClass>com.hlwjs.signIn.SignApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -142,6 +145,28 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!-- Docker maven plugin -->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <configuration>
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+                    <dockerDirectory>src/main/docker</dockerDirectory>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                </configuration>
+            </plugin>
+            <!-- Docker maven plugin -->
         </plugins>
     </build>
 </project>

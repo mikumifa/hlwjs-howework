@@ -134,7 +134,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.scangan_lijin.ScanGanLijinApplication</mainClass>
+                    <mainClass>com.hlwjs.api.ApiApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
