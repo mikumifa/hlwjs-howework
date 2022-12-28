@@ -20,7 +20,7 @@ public class UserSignInfo implements Serializable{
     private String wechatOpenid;
     private String nickName;
     private String avatarUrl;
-    private String gender;
+    private String email;
     private String city;
     private String province;
     private String country;

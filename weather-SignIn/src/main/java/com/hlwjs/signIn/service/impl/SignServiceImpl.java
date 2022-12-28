@@ -1,5 +1,6 @@
 package com.hlwjs.signIn.service.impl;
 
+import com.hlwjs.signIn.dto.EmailSet;
 import com.hlwjs.signIn.dto.UserSignInfo;
 import com.hlwjs.signIn.mapper.SignMapper;
 import com.hlwjs.signIn.service.SignService;
@@ -49,7 +50,7 @@ public class SignServiceImpl implements SignService {
         UserSignInfo sqluserSignInfo = signMapper.selectByPrimaryKey(userSignInfo.getWechatOpenid());
         sqluserSignInfo.setCity(userSignInfo.getCity());
         sqluserSignInfo.setCountry(userSignInfo.getCountry());
-        sqluserSignInfo.setGender(userSignInfo.getGender());
+        sqluserSignInfo.setEmail(userSignInfo.getEmail());
         sqluserSignInfo.setAvatarUrl(userSignInfo.getAvatarUrl());
         sqluserSignInfo.setProvince(userSignInfo.getProvince());
         sqluserSignInfo.setNickName(userSignInfo.getNickName());
@@ -59,5 +60,15 @@ public class SignServiceImpl implements SignService {
     @Override
     public void addUser(UserSignInfo userSignInfo) {
         signMapper.insertSelective(userSignInfo);
+    }
+
+    @Override
+    public void setEmailSet(String id,String email,String province,String city,String country) {
+        UserSignInfo sqluserSignInfo = signMapper.selectByPrimaryKey(id);
+        sqluserSignInfo.setCity(city);
+        sqluserSignInfo.setCountry(country);
+        sqluserSignInfo.setEmail(email);
+        sqluserSignInfo.setProvince(province);
+        signMapper.updateByPrimaryKey(sqluserSignInfo);
     }
 }

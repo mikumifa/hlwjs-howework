@@ -25,6 +25,61 @@ public class TencentWeather implements Serializable {
         @SerializedName("forecast_24h")
         private Forecast_24h forecast_24h;
         private Observe observe;
+        private Index index;
+        @SerializedName("tips")
+        private Tips tips;
+        @lombok.Data
+        public class Index implements Serializable {
+
+            private IndexContext airconditioner;
+            private IndexContext allergy;
+            private IndexContext carwash;
+            private IndexContext chill;
+            private IndexContext clothes;
+            private IndexContext cold;
+            private IndexContext comfort;
+            private IndexContext diffusion;
+            private IndexContext dry;
+            private IndexContext drying;
+            private IndexContext fish;
+            private IndexContext heatstroke;
+            private IndexContext makeup;
+            private IndexContext mood;
+            private IndexContext morning;
+            private IndexContext sports;
+            private IndexContext sunglasses;
+            private IndexContext sunscreen;
+            private String time;
+            private IndexContext tourism;
+            private IndexContext traffic;
+            private IndexContext ultraviolet;
+            private IndexContext umbrella;
+            @lombok.Data
+            public class IndexContext implements Serializable {
+                private String detail;
+                private String info;
+                private String name;
+            }
+        }
+        @lombok.Data
+        public class Tips implements Serializable {
+            @SerializedName("observe")
+            private TipsDetail tipsDetail;
+            @lombok.Data
+            public class TipsDetail implements Serializable {
+                @SerializedName("0")
+                private String tips_0;
+                @SerializedName("1")
+                private String tips_1;
+                @SerializedName("2")
+                private String tips_2;
+                @SerializedName("3")
+                private String tips_3;
+                @SerializedName("4")
+                private String tips_4;
+            }
+
+        }
         @lombok.Data
         public class Air implements Serializable {
             private String aqi;

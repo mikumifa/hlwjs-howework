@@ -15,6 +15,7 @@
       <module name="weather-api" target="1.8" />
       <module name="weather-citycode" target="17" />
       <module name="weather-docker" target="8" />
+      <module name="weather-email" target="1.8" />
       <module name="weather-SignIn" target="1.8" />
       <module name="weather_report" target="17" />
     </bytecodeTargetLevel>
@@ -24,6 +25,7 @@
       <module name="weather-SignIn" options="-parameters" />
       <module name="weather-api" options="-parameters" />
       <module name="weather-citycode" options="-parameters" />
+      <module name="weather-email" options="-parameters" />
       <module name="weather_report" options="-parameters" />
     </option>
   </component>

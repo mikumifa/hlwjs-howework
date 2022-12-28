@@ -1,5 +1,6 @@
 package com.hlwjs.signIn.controller;
 
+import com.hlwjs.signIn.dto.EmailSet;
 import com.hlwjs.signIn.dto.UserSignInfo;
 import com.hlwjs.signIn.service.SignService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,10 @@ public class SignController {
     @RequestMapping(value = "/SetBasicInfo.do",method = RequestMethod.POST)
     public void setBasicInfo(UserSignInfo userSignInfo){
         signService.setBasicInfo(userSignInfo);
+    }
+    @RequestMapping(value = "/SetEmail/{id}/{email}/{province}/{city}/{country}",method = RequestMethod.POST)
+    public void setBasicInfo(@PathVariable("id") String id,@PathVariable("email") String email,@PathVariable("province") String province,@PathVariable("city") String city,@PathVariable("country") String country){
+        signService.setEmailSet(id,email,province,city,country);
     }
     @RequestMapping(value = "/addNewUser.do",method = RequestMethod.PUT)
     public void addUser(UserSignInfo userSignInfo){

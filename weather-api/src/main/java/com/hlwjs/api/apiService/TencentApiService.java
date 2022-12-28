@@ -16,6 +16,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
  **/
 @FeignClient(name = "TencentWeatherAPi",url = "https://wis.qq.com/weather",configuration = DecoderConfig.class)
 public interface TencentApiService {
-@RequestMapping(value = "/common?source=pc&weather_type=observe|forecast_24h|air&province={province}&city={city}&county={country}", method = RequestMethod.GET)
+@RequestMapping(value = "/common?source=pc&weather_type=observe|forecast_24h|air|index|tips&province={province}&city={city}&county={country}", method = RequestMethod.GET)
 JsonElement getWeather(@PathVariable("province") String province, @PathVariable("city") String city, @PathVariable("country") String country);
 }
